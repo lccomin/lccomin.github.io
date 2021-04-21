@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>jQuery1</title> 
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#q1").click(function(){
+	  $("#n2").hide();
+	  $("#n3").hide();
+	  $("#n1").show();
+  });
+  $("#q2").click(function(){
+	  $("#n1").hide();
+	  $("#n3").hide();
+	  $("#n2").show();
+  });
+  $("#q3").click(function(){
+	  $("#n1").hide();
+	  $("#n2").hide();
+	  $("#n3").show();
+  });
+});
+</script>
+</head>
+<body>
+<p>观察能力，是有目的、主动地去考察事物并善于全面正确发现事物的各种典型特征的知觉能力。下面是一些测试观察力的图片，来看看你的观察能力怎么样吧：</p>
+	<button id="q1">第一题</button>
+<button id="q2">第二题</button>
+<button id="q3">第三题</button>
+	<div id="n1"><img src="n1.jpg" width="400" height="200"><br>图中有辆公共汽车，有A和B两个汽车站。问：公共汽车现在是要驶往A车站，还是驶往B车站？</div>
+	<div id="n2"><img src="n2.jpg" width="400" height="200"><br>你能看出图中是一个标准的圆吗?</div>
+	<div id="n3"><img src="n3.jpg" width="400" height="200"><br>看见那只鹿了吗？</div>
+</body>
+</html>
