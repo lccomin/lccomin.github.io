@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery2</title>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").remove();
+  });
+});
+</script>
+</head>
+
+<body>
+	<p>注视下方眩晕图中心20秒，然后点击下方按钮，你会发现神奇的一幕</p>
+	<button id="1">点击发现神奇的一幕</button>
+<div id="div1" style="width:1000px;height:800px;"><img src="xyt.gif" width="800" height="600"> </div>
+	<br>
+<div id="div2" style="width:1200px;height:800px;"><img src="dtt.jpg" width="1200" height="600"> </div>
+</body>
+</html>
